@@ -8,51 +8,42 @@
 
 1: Open
 
-![GitHub Logo](/i/1.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/1.PNG)
 
 2: Choose
 
-![GitHub Logo](/i/2.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/2.PNG)
 
 3: Main View
 
-![GitHub Logo](/i/3.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/3.PNG)
 
 4: Laplace + Prewit + Threshold (100px)
   // you can change params only in script.js 
 
-![GitHub Logo](/i/4.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/4.PNG)
 
 5: Sum
 
-![GitHub Logo](/i/5.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/5.PNG)
 
 6: Difference
 
-![GitHub Logo](/i/6.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/6.PNG)
 
 7: Greyscale
 
-![GitHub Logo](/i/7.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/7.PNG)
 
 8: Move
   // you can change params only in script.js 
 
-![GitHub Logo](/i/8.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/8.PNG)
 
 9: Brightness
   // you can change params only in script.js 
 
-![GitHub Logo](/i/9.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/i/9.PNG)
 
 # Comments
 
