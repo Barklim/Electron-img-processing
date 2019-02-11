@@ -1,0 +1,19 @@
+{
+  "name": "image-processing",
+  "version": "1.0.0",
+  "description": "Best image editor (ty codedamn)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "barkarula",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.4",
+    "angular-route": "^1.7.4",
+    "electron-screenshot": "^1.0.4",
+    "image-js": "^0.21.4",
+    "image-size": "^0.5.4"
+  },
+  "devDependencies": {}
+}

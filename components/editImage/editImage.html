@@ -1,0 +1,127 @@
+<div id="imageEditor">
+	<div id="preview">
+		<div id="imagePreview">
+			<div id="imageColumn">
+			<!-- <img ng-src="{{imagePath}}" id="mainImage"> -->
+			<img ng-src="{{imagePath}}" id="mainImage">
+			</div>
+		</div>
+		<div id="usefulButtons">
+			<!-- <div ng-click="change()">Change</div>-->
+			<div ng-click="onloadImage()">Load</div>
+			<!-- <div ng-click="save()">Save</div> -->
+			<div ng-click="saveCanvasAsImageFile()">Save</div>
+		</div>
+	</div>
+	<div id="imageControls" ng-show="!controlsActive">
+		<div class="effectType" ng-click="thresh()">Threshold</div>	
+		<div class="effectType" ng-click="laplace()">Laplace</div>			
+		<div class="effectType" ng-click="sobel()">Sobel</div>
+		<div class="effectType" ng-click="sobel()">Prewit</div>
+		<div class="effectType" ng-click="sum()">Sum</div>		
+		<div class="effectType" ng-click="diff()">Difference</div>	
+		<div class="effectType" ng-click="grayscale()">GreyScale</div>	
+		<div class="effectType" ng-click="move()">Move</div>	
+		<div class="effectType" ng-click="thresh()">Umnojenie</div>	
+		<div class="effectType" ng-click="brightness()">Brightness</div>	
+		<div class="effectType" ng-click="copy_1to2()">Copy in 2</div>
+		<div class="effectType" ng-click="test()">Copy in 3</div>
+		<div class="effectType" ng-click="test()">Histohram</div>	
+		<!-- <div class="effectType" ng-repeat="(effect, props) in effects" ng-click="imageEffect(effect)">
+			{{effect}}
+		</div>
+		-->
+	</div>
+	<div id="liveEffects" ng-show="controlsActive">
+		<div class="effect" ng-repeat="(effect, props) in effects" ng-show="effect == activeEffect">
+			<div class="effectName">{{effect}}</div>
+			<div class="amountDone">{{props.val + props.delim}}</div>
+			<div class="range-slider">
+				<input type="range" class="slider-input" min="{{props.min}}" max="{{props.max}}" ng-value="props.val" ng-model="props.val" ng-change="setEffect()">
+			</div>
+			<div class="goBack" ng-click="hideThis()">Done</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="imageEditor">
+	<div id="preview">
+		<div id="imagePreview">
+			<div id="imageColumn_2">
+			<img ng-src="{{imagePath_2}}" id="mainImage_2" style="display: inline">
+			</div>
+		</div>
+		<div id="usefulButtons">
+			<div ng-click="onloadImage_2()">Load</div>
+			<div ng-click="saveCanvasAsImageFile_2()">Save</div>
+		</div>
+	</div>
+	<div id="imageControls" ng-show="!controlsActive_2">
+		<div class="effectType" ng-click="thresh_2()">Threshold</div>
+		<div class="effectType" ng-click="laplace_2()">Laplace</div>			
+		<div class="effectType" ng-click="sobel_2()">Sobel</div>
+		<div class="effectType" ng-click="sobel_2()">Prewit</div>
+		<div class="effectType" ng-click="sum_2()">Sum</div>		
+		<div class="effectType" ng-click="diff_2()">Difference</div>	
+		<div class="effectType" ng-click="grayscale_2()">GreyScale</div>	
+		<div class="effectType" ng-click="move_2()">Move</div>	
+		<div class="effectType" ng-click="thresh_2()">Umnojenie</div>	
+		<div class="effectType" ng-click="brightness_2()">Brightness</div>	
+		<div class="effectType" ng-click="test()">Copy in 1</div>	
+		<div class="effectType" ng-click="test()">Copy in 3</div>
+		<div class="effectType" ng-click="test()">Histohram</div>	
+	</div>
+	<div id="liveEffects" ng-show="controlsActive_2">
+		<div class="effect" ng-repeat="(effect_2, props_2) in effects_2" ng-show="effect_2 == activeEffect_2">
+			<div class="effectName_2">{{effect_2}}</div>
+			<div class="amountDone">{{props_2.val_2 + props_2.delim_2}}</div>
+			<div class="range-slider">
+				<input type="range" class="slider-input" min="{{props_2.min_2}}" max="{{props_2.max_2}}" ng-value="props_2.val_2" ng-model="props_2.val_2" ng-change="setEffect_2()">
+			</div>
+			<div class="goBack" ng-click="hideThis_2()">Done</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="imageEditor">
+	<div id="preview">
+		<div id="imagePreview">
+			<div id="imageColumn_3">
+			<img ng-src="{{imagePath_3}}" id="mainImage_3">
+			</div>
+		</div>
+		<div id="usefulButtons">
+			<div ng-click="onloadImage_3()">Load</div>
+			<div ng-click="saveCanvasAsImageFile_3()">Save</div>
+		</div>
+	</div>
+	<div id="imageControls" ng-show="!controlsActive_3">
+		<div class="effectType" ng-click="thresh_3()">Threshold</div>	
+		<div class="effectType" ng-click="laplace_3()">Laplace</div>	
+		<div class="effectType" ng-click="sobel_3()">Sobel</div>
+		<div class="effectType" ng-click="sobel_3()">Prewit</div>
+		<div class="effectType" ng-click="sum_3()">Sum</div>		
+		<div class="effectType" ng-click="diff_3()">Difference</div>	
+		<div class="effectType" ng-click="grayscale_3()">GreyScale</div>	
+		<div class="effectType" ng-click="move_3()">Move</div>	
+		<div class="effectType" ng-click="thresh_3()">Umnojenie</div>	
+		<div class="effectType" ng-click="brightness_3()">Brightness</div>	
+		<div class="effectType" ng-click="test()">Copy in 1</div>
+		<div class="effectType" ng-click="test()">Copy in 2</div>
+		<div class="effectType" ng-click="test()">Histohram</div>		
+	</div>
+	<div id="liveEffects" ng-show="controlsActive_3">
+		<div class="effect" ng-repeat="(effect_3, props_3) in effects_3" ng-show="effect_3 == activeEffect_3">
+			<div class="effectName_3">{{effect_3}}</div>
+			<div class="amountDone">{{props_3.val_3 + props_3.delim_3}}</div>
+			<div class="range-slider">
+				<input type="range" class="slider-input" min="{{props_3.min_3}}" max="{{props_3.max_3}}" ng-value="props_3.val_3" ng-model="props_3.val_3" ng-change="setEffect_3()">
+			</div>
+			<div class="goBack" ng-click="hideThis_3()">Done</div>
+		</div>
+	</div>
+</div>
